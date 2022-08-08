@@ -6,15 +6,16 @@
 		<!-- displays site properly based on user's device -->
 
 		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./images/favicon-32x32.png"
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./images/favicon-32x32.png"
 		/>
 		<link rel="stylesheet" href="./style.css" />
-
+    <script defer src="./script.js"></script>
+    
 		<title>Frontend Mentor | Intro component with sign up form</title>
-
+    
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 	</head>
 	<body>
@@ -33,41 +34,41 @@
 				</button>
 				<form class="form">
 					<div class="input-container">
-						<input type="text" placeholder="First Name" />
+						<input id="first-name" type="text" placeholder="First Name" />
 						<img
-							class="error-icon"
+							class="error-icon error-icon-first"
 							src="./images/icon-error.svg"
 							alt="error icon"
 						/>
 
-						<p class="error">First Name cannot be empty</p>
+						<p class="error error-first-name">First Name cannot be empty</p>
 					</div>
 					<div class="input-container">
-						<input type="text" placeholder="Last Name" />
+						<input id="last-name" type="text" placeholder="Last Name" />
             <img
-							class="error-icon"
+							class="error-icon error-icon-last"
 							src="./images/icon-error.svg"
 							alt="error icon"
 						/>
-						<p class="error">Last Name cannot be empty</p>
+						<p class="error error-last-name">Last Name cannot be empty</p>
 					</div>
 					<div class="input-container">
-						<input type="email" placeholder="Email Address" />
+						<input id="email" type="email" placeholder="Email Address" />
             <img
-							class="error-icon"
+							class="error-icon error-icon-email"
 							src="./images/icon-error.svg"
 							alt="error icon"
 						/>
-						<p class="error">Looks like this is not an email</p>
+						<p class="error error-email">Looks like this is not an email</p>
 					</div>
 					<div class="input-container">
-						<input type="password" placeholder="Password" />
+						<input id="password" type="password" placeholder="Password" />
             <img
-							class="error-icon"
+							class="error-icon error-icon-password"
 							src="./images/icon-error.svg"
 							alt="error icon"
 						/>
-						<p class="error">Password cannot be empty</p>
+						<p class="error error-password">Password cannot be empty</p>
 					</div>
 
 					<button class="form-btn">Claim your free trial</button>

@@ -68,6 +68,7 @@ h1 {
 
 .form {
 	width: 540px;
+
 	position: relative;
 	padding: 40px;
 	background: #ffffff;
@@ -81,19 +82,23 @@ h1 {
 	text-align: center;
 }
 
+.terms strong:hover {
+  cursor: pointer;
+}
+
 .form strong {
 	color: #ff7979;
 }
 
 .input-container {
-	margin: 0 0 1rem 0;
+	margin: 0 0 1.5rem 0;
 	position: relative;
 }
 
 input {
 	width: 100%;
 	padding: 1rem;
-	border-radius: 10px;
+	border-radius: 5px;
 	border: 1px solid #dedede;
 }
 
@@ -105,7 +110,10 @@ input::placeholder {
 	position: absolute;
 	top: 11px;
 	right: 27px;
+  display: none;
 }
+
+
 
 .form-btn {
 	background: #38cc8b;
@@ -121,6 +129,11 @@ input::placeholder {
 	font-weight: 600;
 	letter-spacing: 1px;
 	margin-bottom: 1rem;
+  transition: all .3s;
+}
+
+.form-btn:hover {
+  background-color:  #77E2B3;
 }
 
 /* ******** ACTIVE STATE ********** */
@@ -132,7 +145,13 @@ input::placeholder {
 	font-style: italic;
 	text-align: right;
 	margin-top: 6px;
+  display: none;
 }
+
+.active-state {
+  display: block;
+}
+
 
 .attribution {
 	font-size: 11px;
